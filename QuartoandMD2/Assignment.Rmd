@@ -2,7 +2,17 @@
 title: "Exercise"
 author: "Wojciech Hardy"
 date: "3/29/2022"
-output: html_document
+output: 
+ html:
+   toc: true
+   toc-depth: 2
+   toc-expand: 1
+   toc-title: Contents
+   toc - location: left
+   smooth-scroll: true
+ pdf:
+  lof: true
+   lot: true
 ---
 
 ```{r setup, include=FALSE}

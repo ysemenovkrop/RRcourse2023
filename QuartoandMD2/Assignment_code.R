@@ -5,13 +5,15 @@
 
 library(quarto)
 
-setwd("")
+setwd("/Users/yuriisemenov/Documents/GitHub/RRcourse2023/QuartoandMD2")
+
+getwd()
 
 # Converting from Rmd to Qmd
 
 ## Step 1) 
-knitr::convert_chunk_header(input = "RMD_class_1_cut.Rmd", 
-                            output = "QMD_class_1_cut.qmd")
+knitr::convert_chunk_header(input = "Assignment.Rmd", 
+                            output = "Assignment.qmd")
 
 ## Step 2)
 readLines("QMD_class_1_cut.qmd")[1:5]
@@ -33,4 +35,6 @@ sys::exec_wait("quarto install tinytex")
 # Rendering
 library(quarto)
 
-quarto_render("QMD_class_1_cut.qmd", output_format = "docx")
+quarto_render("Assignment.qmd", output_format = "pdf")
+
+
