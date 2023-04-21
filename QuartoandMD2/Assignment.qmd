@@ -1,27 +1,24 @@
 ---
 title: "Exercise"
 author: "Wojciech Hardy"
-date: "3/29/2022"
-output: 
+date: today
+format: 
  html:
-   toc: true
-   toc-depth: 2
-   toc-expand: 1
-   toc-title: Contents
-   toc - location: left
-   smooth-scroll: true
- pdf:
-  lof: true
-  lot: true
+  toc: true
+  toc-depth: 2
+  toc-expand: 1
+  toc-title: Contents
+  toc - location: left
+  smooth-scroll: true
+  theme: united
 ---
 
 ```{r}
 #| label = "setup",
 #| include = FALSE
 knitr::opts_chunk$set(echo = FALSE)
-load("../Data/season_1.RData")
+load("/Users/yuriisemenov/Documents/GitHub/RRcourse2023/Data/season_1.RData")
 ```
-
 # Game of Thrones - Season 1 summary in numbers
 
 ### __(*Warning:* spoilers ahead)__
@@ -63,3 +60,23 @@ Finally, the episodes with the above-average viewership were:
 | 8             | "The Pointy End" | Daniel Minahan      |
 | 9             | "Baelor" | Alan Taylor      |
 | 10            | "Fire and Blood" | Alan Taylor      |
+
+## Including ordered tabs
+
+`1. Please watch`
+
+`2. Please analyze`
+
+`3. Please forget`
+
+## Including unordered tabs
+
+`* Please forget`
+
+`* Please watch`
+
+`* Please analyze`
+
+## Trailer
+
+{{< video https://www.youtube.com/watch?v=bjqEWgDVPe0&pp=ygUhZ2FtZSBvZiB0aHJvbmVzIDEgc2Vhc29uIHRyYWlsZXIg >}}

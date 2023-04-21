@@ -35,6 +35,7 @@ sys::exec_wait("quarto install tinytex")
 # Rendering
 library(quarto)
 
+quarto_render("Assignment.qmd", output_format = "html")
 quarto_render("Assignment.qmd", output_format = "pdf")
 
 
